@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="hero">
+        <h1>Text To Speech <span>Converter</span></h1>
+        <div>
+            <textarea placeholder="Write anyhing here..."></textarea>
+        </div>
+        <div class="row">
+            <select>
+            </select>
+            
+        </div>
+        <div class="speech_ctrl">
+            <div class="range_container">
+                <div class="input_container" style="--clr:#e84393">
+                    <input type="range" min="0.1" max="3" value="1" step="0.5" id="speed_range">
+                    <label for="">Speed</label>
+                </div>
+                <div class="input_container" style="--clr:#00f894">
+                    <input type="range" min="0" max="2" value="1" step="0.1" id="pitch_range">
+                    <label for="">Pitch</label>
+                </div>
+                <div class="input_container" style="--clr:#0984e3">
+                    <input type="range" min="0" max="1" value="1" step="0.1" id="volume_range">
+                    <label for="">Volume</label>
+                </div>
+            </div>
+            <div class="btn_container">
+                <button style="--clr:#ffa500">Play</button>
+                <button style="--clr:#fc0fc0" id="pause_btn">Pause</button>
+                <button style="--clr:#22a6b3" id="resume_btn">Resume</button>
+                <button style="--clr:#6ab04c" id="reset_btn">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
